@@ -30,7 +30,7 @@ function WefowardVueBuilder() {
 WefowardVueBuilder.prototype.apply = function(compiler) {
 	let plugin = this;
 	//编译完成监听
-	compiler.hooks.compile.tap('done', function() {
+	compiler.hooks.done.tap('done', function() {
 		//删除svn文件
 		emptyDir(path.resolve(process.cwd(), 'dist/.svn'));
 		//删除git文件
