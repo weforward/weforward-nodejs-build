@@ -13,18 +13,18 @@ const BUILD_TIME = _d.getFullYear() + '-' + (_d.getMonth() + 1) + '-' + _d.getDa
 
 function WefowardVueBuilder() {
 	//版本保存
-	let _packagePath = process.env.VUE_APP_WF_PACKAGE_JS ? process.env.VUE_APP_WF_PACKAGE_JS : 'package.json';
+	let _packagePath = process.env.WF_BUILD_PACKAGE_JS ? process.env.WF_BUILD_PACKAGE_JS : 'package.json';
 	this.packagePath = path.resolve(process.cwd(), _packagePath);
 	let _options = require(path.resolve(process.cwd(), _packagePath));
 	this.options = _options;
 	this.name = _options.name;
 	this.version = _options.version;
 	this.hosts = exchangeHostToHosts(process.env.VUE_APP_WF_HOST);
-	this.isPackage = process.env.VUE_APP_WF_IS_PACKAGE;
-	this.isGrowVersion = process.env.VUE_APP_WF_IS_GROW_VERSION;
-	this.isDist = process.env.VUE_APP_WF_IS_DIST;
-	this.disthubUrl = process.env.VUE_APP_WF_DISTHUB_URL;
-	this.distAuthorization = process.env.VUE_APP_WF_DIST_AUTHORIZATION;
+	this.isPackage = process.env.WF_BUILD_IS_PACKAGE;
+	this.isGrowVersion = process.env.WF_BUILD_IS_GROW_VERSION;
+	this.isDist = process.env.WF_BUILD_IS_DIST;
+	this.disthubUrl = process.env.WF_BUILD_DISTHUB_URL;
+	this.distAuthorization = process.env.WF_BUILD_DIST_AUTHORIZATION;
 }
 
 WefowardVueBuilder.prototype.apply = function(compiler) {

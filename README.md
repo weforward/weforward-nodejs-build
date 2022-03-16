@@ -32,24 +32,24 @@ NODE_ENV=production
 VUE_APP_WF_PUBLICPATH=/#{name}/#{tag}/
 
 #接口域名，多个时使用英文逗号隔开
-VUE_APP_WF_HOST=//g1.weforward.cn
+VUE_APP_WF_HOST=//wf.weforward.xyz
 
 #是否增长版本
-VUE_APP_WF_IS_GROW_VERSION=true
+WF_BUILD_IS_GROW_VERSION=true
 
 #是否打包
-VUE_APP_WF_IS_PACKAGE=true
+WF_BUILD_IS_PACKAGE=true
 
 #是否发布
-VUE_APP_WF_IS_DIST=true
+WF_BUILD_IS_DIST=true
 
 #项目编译后提交的路径
-VUE_APP_WF_DISTHUB_URL=http://xxxx/dist/vue/
+WF_BUILD_DISTHUB_URL=http://xxxx/dist/vue/
 
 #编译并提交项目需要鉴权，内容格式为"用户名:密码"
-#VUE_APP_WF_DIST_AUTHORIZATION=xxx:xxx
+#VWF_BUILD_DIST_AUTHORIZATION=xxx:xxx
 
 #多项目结构时使用，指定项目的package.json，不指定默认使用package.js
-#VUE_APP_WF_PACKAGE_JS=./src/mypackage.json
+#WF_BUILD_PACKAGE_JS=./src/mypackage.json
 
 ```
