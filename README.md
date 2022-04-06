@@ -44,10 +44,10 @@ WF_BUILD_IS_PACKAGE=true
 WF_BUILD_IS_DIST=true
 
 #项目编译后提交的路径
-WF_BUILD_DISTHUB_URL=http://xxxx/dist/vue/
+WF_BUILD_DISTHUB_URL=http://xxxx/dist/html/
 
 #编译并提交项目需要鉴权，内容格式为"用户名:密码"
-#VWF_BUILD_DIST_AUTHORIZATION=xxx:xxx
+#WF_BUILD_DIST_AUTHORIZATION=xxx:xxx
 
 #多项目结构时使用，指定项目的package.json，不指定默认使用package.js
 #WF_BUILD_PACKAGE_JS=./src/mypackage.json
