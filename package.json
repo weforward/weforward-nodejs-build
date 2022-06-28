@@ -1,6 +1,6 @@
 {
 	"name": "weforward-builder",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "weforward前端项目编译插件",
 	"main": "index.js",
 	"scripts": {
@@ -17,5 +17,8 @@
 	"license": "MIT",
 	"dependencies": {
 		"colors": "^1.4.0"
+	},
+	"devDependencies": {
+		"shelljs": "^0.8.5"
 	}
 }
